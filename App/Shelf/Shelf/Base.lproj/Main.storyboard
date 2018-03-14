@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W4V-16-XsV">
-                            <size key="itemSize" width="321" height="205"/>
+                            <size key="itemSize" width="321" height="219"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShelfCollectionCell" id="30v-Nb-2Hj" customClass="ShelfCollectionCell" customModule="Shelf" customModuleProvider="target">
-                                <rect key="frame" x="27" y="10" width="321" height="205"/>
+                                <rect key="frame" x="27" y="10" width="321" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="321" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="219"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-Q3-Cok">
@@ -47,9 +47,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWD-T1-PX1">
-                                            <rect key="frame" x="0.0" y="35" width="321" height="170"/>
+                                            <rect key="frame" x="0.0" y="27" width="324" height="192"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.24847236280000001" green="0.25291812419999998" blue="0.43923366069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" red="0.35360091919999997" green="0.75902473930000003" blue="0.64312326909999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                     </subviews>
                                 </view>
@@ -67,13 +68,15 @@
                             <outlet property="delegate" destination="2pT-v1-gLV" id="mRp-tp-8kr"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="G1D-ho-8y9"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="G1D-ho-8y9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vtS-q3-dKX"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgD-B6-fVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488.80000000000001" y="-242.42878560719643"/>
+            <point key="canvasLocation" x="488.80000000000001" y="-243.10344827586209"/>
         </scene>
-        <!--Item Collection View Controller-->
+        <!--Title-->
         <scene sceneID="kY9-JT-ea5">
             <objects>
                 <collectionViewController id="lrP-nN-Rip" customClass="ItemCollectionViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
@@ -128,6 +131,9 @@
                             <outlet property="delegate" destination="lrP-nN-Rip" id="Ggm-nu-HC1"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Title" id="jLj-Ve-xD5">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="I9y-Sm-7rD"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiQ-zY-h2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,7 +142,6 @@
         <!--iPhone X-->
         <scene sceneID="iZi-0Q-eZ7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ROi-1f-qEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="iPhone X" id="TuK-Sd-tK6" customClass="ItemDetailsViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zex-G7-I7K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -221,7 +226,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Bdc-je-NMA"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="w1F-LV-AXt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="8a0-Jh-lxX"/>
+                    </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROi-1f-qEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1965.5999999999999" y="-242.36453201970446"/>
         </scene>
@@ -230,12 +239,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k2I-wV-Umq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCa-Ko-Fz5">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GCa-Ko-Fz5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vCa-zf-k9N">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="2pT-v1-gLV" kind="relationship" relationship="rootViewController" id="EgX-KP-dUn"/>
                     </connections>

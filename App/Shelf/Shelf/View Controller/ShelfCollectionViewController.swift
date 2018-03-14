@@ -13,12 +13,15 @@ class ShelfCollectionViewController: UICollectionViewController {
     var shelf_items = ["Shoes", "Jackets", "Electronics"]
     var shelf_images = ["shoe", "jacket", "mbp17"]
     
+    override func viewWillAppear(_ animated: Bool) {
+        //self.navigationController!.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.navigationItem.title = "Shelves"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
