@@ -9,5 +9,6 @@ target 'Shelf' do
   pod 'RevealingSplashView'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

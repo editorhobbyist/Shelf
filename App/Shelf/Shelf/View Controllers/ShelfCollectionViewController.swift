@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class ShelfCollectionViewController: UICollectionViewController {
     
     var shelf_items = ["Electronics", "Jackets", "Shoes"]
     var shelf_images = ["mbp17", "jacket", "shoe"]
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         //self.navigationController!.navigationBar.prefersLargeTitles = true
@@ -19,14 +22,22 @@ class ShelfCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.navigationItem.title = "Shelves"
+        
+        if let user = Auth.auth().currentUser {
+            // use the user object here
+            print("Current user logged in as: \(user.email ?? "meh")")
+
+        } else {
+            print("no user is logged in")
+        }
         
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
         
         collectionView?.reloadData()
+
     }
     
     override func didReceiveMemoryWarning() {

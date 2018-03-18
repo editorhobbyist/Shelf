@@ -20,6 +20,7 @@
 		7832726720597E9E009AFE37 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */; };
 		785F60BA205E874F003DEE90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F60B9205E874F003DEE90 /* LoginViewController.swift */; };
 		78D13CA9205E823400DD8796 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D13CA8205E823400DD8796 /* GoogleService-Info.plist */; };
+		78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9875C205ECE7300EA270C /* SignUpViewController.swift */; };
 		D3FFF1ECE6499C7A144CEAF3 /* Pods_Shelf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFD1B0E828043A6FE3F7C76 /* Pods_Shelf.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		785F60B9205E874F003DEE90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78D13CA8205E823400DD8796 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78D9875C205ECE7300EA270C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FD542B1F2512A90AC937253B /* Pods-Shelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shelf/Pods-Shelf.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				7832725F20597256009AFE37 /* ShelfCollectionViewController.swift */,
 				7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */,
 				785F60B9205E874F003DEE90 /* LoginViewController.swift */,
+				78D9875C205ECE7300EA270C /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -225,6 +229,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +298,7 @@
 				7832726320597600009AFE37 /* ShelfCollectionCell.swift in Sources */,
 				7832726520597E65009AFE37 /* ItemCollectionCell.swift in Sources */,
 				7832725E2058EE11009AFE37 /* ItemTableViewController.swift in Sources */,
+				78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */,
 				7832726720597E9E009AFE37 /* ItemCollectionViewController.swift in Sources */,
 				783272412058E7C6009AFE37 /* AppDelegate.swift in Sources */,
 				7832726020597256009AFE37 /* ShelfCollectionViewController.swift in Sources */,
