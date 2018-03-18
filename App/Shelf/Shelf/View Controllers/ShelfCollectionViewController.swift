@@ -10,8 +10,8 @@ import UIKit
 
 class ShelfCollectionViewController: UICollectionViewController {
     
-    var shelf_items = ["Shoes", "Jackets", "Electronics"]
-    var shelf_images = ["shoe", "jacket", "mbp17"]
+    var shelf_items = ["Electronics", "Jackets", "Shoes"]
+    var shelf_images = ["mbp17", "jacket", "shoe"]
     
     override func viewWillAppear(_ animated: Bool) {
         //self.navigationController!.navigationBar.prefersLargeTitles = true
