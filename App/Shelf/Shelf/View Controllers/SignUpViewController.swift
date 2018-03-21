@@ -49,15 +49,14 @@ class SignUpViewController: UIViewController {
                     // add user to database
                     if let user_session = Auth.auth().currentUser {
                         let ref = Database.database().reference()
-                        ref.child("users").child(user_session.uid).setValue([
+                        ref.child("users/\(user_session.uid)").setValue([
                             "email":"\(user_session.email!)",
                             "firstname":"\(self.firstNameField.text!)",
                             "lastname":"\(self.lastNameField.text!)"
                             ])
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves")
+                        self.present(vc!, animated: true, completion: nil)
                     }
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves")
-                    self.present(vc!, animated: true, completion: nil)
-                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     

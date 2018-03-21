@@ -13,11 +13,14 @@ class ShelfCollectionViewController: UICollectionViewController {
     
     var shelf_items = ["Electronics", "Jackets", "Shoes"]
     var shelf_images = ["mbp17", "jacket", "shoe"]
+    var fb_shelf_items: [String: AnyObject] = [:]
+    var fb_shelf_items_array: [String] = []
     
-
+    var ref = Database.database().reference() // Reference to RealtimeFirebaseDatabase
+    let user = Auth.auth().currentUser
     
     override func viewWillAppear(_ animated: Bool) {
-        //self.navigationController!.navigationBar.prefersLargeTitles = true
+
     }
     
     override func viewDidLoad() {
@@ -25,19 +28,14 @@ class ShelfCollectionViewController: UICollectionViewController {
         
         self.navigationItem.title = "Shelves"
         
-        if let user = Auth.auth().currentUser {
-            // use the user object here
-            print("Current user logged in as: \(user.email ?? "meh")")
+        ref.child("shelves").child((self.user?.uid)!).observe(.value, with: { (snapshot) in
+            self.fb_shelf_items = (snapshot.value as? [String: AnyObject])!
+            self.fb_shelf_items_array = self.fb_shelf_items.map{return $0.key}
+            self.collectionView?.reloadData()
+        })
 
-        } else {
-            print("no user is logged in")
-        }
-        
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
-        
-        collectionView?.reloadData()
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +45,7 @@ class ShelfCollectionViewController: UICollectionViewController {
     
     // 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return shelf_items.count
+        return fb_shelf_items.count
     }
     
     // Set cells
@@ -62,10 +60,8 @@ class ShelfCollectionViewController: UICollectionViewController {
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
         
-        cell.shelfName.text = " " + shelf_items[indexPath.row]
-        cell.shelfImage.image = UIImage(named: shelf_images[indexPath.row])
-        cell.shelfImage.contentMode = .scaleAspectFit
-
+        cell.shelfName.text = " " + self.fb_shelf_items_array[indexPath.row]
+        //cell.shelfImage.contentMode = .scaleAspectFit
         return cell
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k2I-wV-Umq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MHI-ac-XnU">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
             <objects>
                 <collectionViewController id="2pT-v1-gLV" customClass="ShelfCollectionViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5NX-bv-VEN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.32140314580000001" green="0.69220799209999995" blue="0.58430069679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W4V-16-XsV">
@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShelfCollectionCell" id="30v-Nb-2Hj" customClass="ShelfCollectionCell" customModule="Shelf" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="ShelfCollectionCell" id="30v-Nb-2Hj" customClass="ShelfCollectionCell" customModule="Shelf" customModuleProvider="target">
                                 <rect key="frame" x="27" y="10" width="321" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -75,7 +75,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgD-B6-fVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549.60000000000002" y="-251.23152709359607"/>
+            <point key="canvasLocation" x="892" y="-251.23152709359607"/>
         </scene>
         <!--Login-->
         <scene sceneID="Z4i-Pn-Nxf">
@@ -250,7 +250,7 @@
             <objects>
                 <collectionViewController id="lrP-nN-Rip" customClass="ItemCollectionViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="El9-zo-tkw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.32140314580000001" green="0.69220799209999995" blue="0.58430069679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cat-SH-bpE">
@@ -260,7 +260,7 @@
                             <inset key="sectionInset" minX="22" minY="13" maxX="22" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCollectionCell" id="lk2-RW-1Mn" customClass="ItemCollectionCell" customModule="Shelf" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="ItemCollectionCell" id="lk2-RW-1Mn" customClass="ItemCollectionCell" customModule="Shelf" customModuleProvider="target">
                                 <rect key="frame" x="22" y="13" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -308,14 +308,14 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiQ-zY-h2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="-251.23152709359607"/>
+            <point key="canvasLocation" x="1658.4000000000001" y="-251.23152709359607"/>
         </scene>
         <!--iPhone X-->
         <scene sceneID="iZi-0Q-eZ7">
             <objects>
                 <viewController title="iPhone X" id="TuK-Sd-tK6" customClass="ItemDetailsViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zex-G7-I7K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Variant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-GD-LBj">
@@ -405,12 +405,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROi-1f-qEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2077.5999999999999" y="-251.23152709359607"/>
+            <point key="canvasLocation" x="2420" y="-251.23152709359607"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ShelvesNav-->
         <scene sceneID="5me-cr-hQp">
             <objects>
-                <navigationController storyboardIdentifier="Shelves" automaticallyAdjustsScrollViewInsets="NO" id="k2I-wV-Umq" sceneMemberID="viewController">
+                <navigationController title="ShelvesNav" automaticallyAdjustsScrollViewInsets="NO" id="k2I-wV-Umq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="AoO-g9-Ih3">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GCa-Ko-Fz5">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
@@ -434,7 +442,29 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27R-Mz-gr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="-251"/>
+            <point key="canvasLocation" x="188" y="-251.23152709359607"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Xnz-Qg-daV">
+            <objects>
+                <viewController title="Settings" id="K7K-fG-mlw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hpD-s7-qT4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sd1-GE-WfU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="gMk-mv-Kcl" userLabel="Settings">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPp-zV-95x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="471"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mZd-eS-vsb">
@@ -461,6 +491,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDc-a4-Zd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-154" y="-907"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1d2-e4-FPz">
+            <objects>
+                <tabBarController storyboardIdentifier="Shelves" automaticallyAdjustsScrollViewInsets="NO" id="zN3-1f-K2m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dt9-Zr-9Fj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.28255206346511841" green="0.49510377645492554" blue="0.4431309700012207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.87558593750000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="k2I-wV-Umq" kind="relationship" relationship="viewControllers" id="FFV-WJ-0Ih"/>
+                        <segue destination="K7K-fG-mlw" kind="relationship" relationship="viewControllers" id="vGh-KS-38G"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vap-Un-u8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-251"/>
         </scene>
     </scenes>
     <resources>
