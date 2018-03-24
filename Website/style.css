@@ -336,3 +336,19 @@ event_name {
     text-align: center;
     font-size: 15px;
 }
+
+.chal_succ_icon_set {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.chal_succ_img img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px
+}
