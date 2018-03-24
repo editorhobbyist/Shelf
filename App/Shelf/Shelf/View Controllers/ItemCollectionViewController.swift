@@ -37,10 +37,12 @@ class ItemCollectionViewController: UICollectionViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"ItemCollectionCell", for: indexPath) as! ItemCollectionCell
         
+        
+        cell.layer.cornerRadius = 5.0
         //shadow
         cell.layer.shadowColor = UIColor.lightGray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowRadius = 5.0
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
         

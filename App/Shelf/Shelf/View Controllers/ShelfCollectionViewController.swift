@@ -28,6 +28,7 @@ class ShelfCollectionViewController: UICollectionViewController {
         
         self.navigationItem.title = "Shelves"
         
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         ref.child("shelves").child((self.user?.uid)!).observe(.value, with: { (snapshot) in
             self.fb_shelf_items = (snapshot.value as? [String: AnyObject])!
             self.fb_shelf_items_array = self.fb_shelf_items.map{return $0.key}
@@ -53,12 +54,17 @@ class ShelfCollectionViewController: UICollectionViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"ShelfCollectionCell", for: indexPath) as! ShelfCollectionCell
         
+    
+        cell.layer.cornerRadius = 5.0
+        
         //shadow
         cell.layer.shadowColor = UIColor.lightGray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowRadius = 5.0
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
+        
+        
         
         cell.shelfName.text = " " + self.fb_shelf_items_array[indexPath.row]
         //cell.shelfImage.contentMode = .scaleAspectFit
