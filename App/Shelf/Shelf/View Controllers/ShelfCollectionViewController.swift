@@ -30,7 +30,10 @@ class ShelfCollectionViewController: UICollectionViewController {
         
         ref.child("shelves").child((self.user?.uid)!).observe(.value, with: { (snapshot) in
             self.fb_shelf_items = (snapshot.value as? [String: AnyObject])!
+            
+            // 'map' function
             self.fb_shelf_items_array = self.fb_shelf_items.map{return $0.key}
+            self.fb_shelf_items_array = self.fb_shelf_items_array.sorted();
             self.collectionView?.reloadData()
         })
 
@@ -60,8 +63,9 @@ class ShelfCollectionViewController: UICollectionViewController {
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
         
-        cell.shelfName.text = " " + self.fb_shelf_items_array[indexPath.row]
-        //cell.shelfImage.contentMode = .scaleAspectFit
+        cell.shelfName.text = " " + self.shelf_items[indexPath.row]
+        cell.shelfImage.image = UIImage(named: self.shelf_images[indexPath.row])
+        cell.shelfImage.contentMode = .scaleAspectFit
         return cell
     }
 }
