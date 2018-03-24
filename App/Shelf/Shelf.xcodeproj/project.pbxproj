@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		783272412058E7C6009AFE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783272402058E7C6009AFE37 /* AppDelegate.swift */; };
-		783272432058E7C7009AFE37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783272422058E7C6009AFE37 /* ViewController.swift */; };
 		783272462058E7C7009AFE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783272442058E7C7009AFE37 /* Main.storyboard */; };
 		783272482058E7C7009AFE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783272472058E7C7009AFE37 /* Assets.xcassets */; };
 		7832724B2058E7C7009AFE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783272492058E7C7009AFE37 /* LaunchScreen.storyboard */; };
+		7832725A2058EDED009AFE37 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783272592058EDED009AFE37 /* ItemDetailsViewController.swift */; };
+		7832725C2058EE00009AFE37 /* ShelfTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832725B2058EE00009AFE37 /* ShelfTableViewController.swift */; };
+		7832725E2058EE11009AFE37 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832725D2058EE11009AFE37 /* ItemTableViewController.swift */; };
+		7832726020597256009AFE37 /* ShelfCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832725F20597256009AFE37 /* ShelfCollectionViewController.swift */; };
+		7832726320597600009AFE37 /* ShelfCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832726220597600009AFE37 /* ShelfCollectionCell.swift */; };
+		7832726520597E65009AFE37 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832726420597E65009AFE37 /* ItemCollectionCell.swift */; };
+		7832726720597E9E009AFE37 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */; };
+		785F60BA205E874F003DEE90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F60B9205E874F003DEE90 /* LoginViewController.swift */; };
+		78D13CA9205E823400DD8796 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78D13CA8205E823400DD8796 /* GoogleService-Info.plist */; };
+		78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9875C205ECE7300EA270C /* SignUpViewController.swift */; };
+		D3FFF1ECE6499C7A144CEAF3 /* Pods_Shelf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFD1B0E828043A6FE3F7C76 /* Pods_Shelf.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C10DB8640439D42E5DF68B0 /* Pods-Shelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shelf/Pods-Shelf.debug.xcconfig"; sourceTree = "<group>"; };
+		3EFD1B0E828043A6FE3F7C76 /* Pods_Shelf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shelf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7832723D2058E7C6009AFE37 /* Shelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783272402058E7C6009AFE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		783272422058E7C6009AFE37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		783272452058E7C7009AFE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		783272472058E7C7009AFE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7832724A2058E7C7009AFE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7832724C2058E7C7009AFE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783272592058EDED009AFE37 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		7832725B2058EE00009AFE37 /* ShelfTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfTableViewController.swift; sourceTree = "<group>"; };
+		7832725D2058EE11009AFE37 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		7832725F20597256009AFE37 /* ShelfCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCollectionViewController.swift; sourceTree = "<group>"; };
+		7832726220597600009AFE37 /* ShelfCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCollectionCell.swift; sourceTree = "<group>"; };
+		7832726420597E65009AFE37 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
+		7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
+		785F60B9205E874F003DEE90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78D13CA8205E823400DD8796 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78D9875C205ECE7300EA270C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FD542B1F2512A90AC937253B /* Pods-Shelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shelf/Pods-Shelf.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FFF1ECE6499C7A144CEAF3 /* Pods_Shelf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136EB0C51C3589323A25DBB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C10DB8640439D42E5DF68B0 /* Pods-Shelf.debug.xcconfig */,
+				FD542B1F2512A90AC937253B /* Pods-Shelf.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		783272342058E7C6009AFE37 = {
 			isa = PBXGroup;
 			children = (
 				7832723F2058E7C6009AFE37 /* Shelf */,
 				7832723E2058E7C6009AFE37 /* Products */,
+				136EB0C51C3589323A25DBB5 /* Pods */,
+				EDA3ED8D949F8623562E010F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,55 @@
 		7832723F2058E7C6009AFE37 /* Shelf */ = {
 			isa = PBXGroup;
 			children = (
+				78D13CA8205E823400DD8796 /* GoogleService-Info.plist */,
+				78327261205975DB009AFE37 /* Collection Cells */,
+				783272522058ED04009AFE37 /* View Controllers */,
 				783272402058E7C6009AFE37 /* AppDelegate.swift */,
-				783272422058E7C6009AFE37 /* ViewController.swift */,
 				783272442058E7C7009AFE37 /* Main.storyboard */,
 				783272472058E7C7009AFE37 /* Assets.xcassets */,
 				783272492058E7C7009AFE37 /* LaunchScreen.storyboard */,
 				7832724C2058E7C7009AFE37 /* Info.plist */,
 			);
 			path = Shelf;
+			sourceTree = "<group>";
+		};
+		783272522058ED04009AFE37 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7832726820598418009AFE37 /* Legacy Controllers */,
+				783272592058EDED009AFE37 /* ItemDetailsViewController.swift */,
+				7832725F20597256009AFE37 /* ShelfCollectionViewController.swift */,
+				7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */,
+				785F60B9205E874F003DEE90 /* LoginViewController.swift */,
+				78D9875C205ECE7300EA270C /* SignUpViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		78327261205975DB009AFE37 /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7832726220597600009AFE37 /* ShelfCollectionCell.swift */,
+				7832726420597E65009AFE37 /* ItemCollectionCell.swift */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		7832726820598418009AFE37 /* Legacy Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7832725B2058EE00009AFE37 /* ShelfTableViewController.swift */,
+				7832725D2058EE11009AFE37 /* ItemTableViewController.swift */,
+			);
+			path = "Legacy Controllers";
+			sourceTree = "<group>";
+		};
+		EDA3ED8D949F8623562E010F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EFD1B0E828043A6FE3F7C76 /* Pods_Shelf.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7832724F2058E7C7009AFE37 /* Build configuration list for PBXNativeTarget "Shelf" */;
 			buildPhases = (
+				4DCB9FC948D189DD493497DE /* [CP] Check Pods Manifest.lock */,
 				783272392058E7C6009AFE37 /* Sources */,
 				7832723A2058E7C6009AFE37 /* Frameworks */,
 				7832723B2058E7C6009AFE37 /* Resources */,
+				1F90385C729DA155AE778939 /* [CP] Embed Pods Frameworks */,
+				5F2350AA42C28EEF207C41C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7832724B2058E7C7009AFE37 /* LaunchScreen.storyboard in Resources */,
+				78D13CA9205E823400DD8796 /* GoogleService-Info.plist in Resources */,
 				783272482058E7C7009AFE37 /* Assets.xcassets in Resources */,
 				783272462058E7C7009AFE37 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +210,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F90385C729DA155AE778939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shelf/Pods-Shelf-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shelf/Pods-Shelf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCB9FC948D189DD493497DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shelf-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2350AA42C28EEF207C41C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shelf/Pods-Shelf-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shelf/Pods-Shelf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		783272392058E7C6009AFE37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				783272432058E7C7009AFE37 /* ViewController.swift in Sources */,
+				785F60BA205E874F003DEE90 /* LoginViewController.swift in Sources */,
+				7832726320597600009AFE37 /* ShelfCollectionCell.swift in Sources */,
+				7832726520597E65009AFE37 /* ItemCollectionCell.swift in Sources */,
+				7832725E2058EE11009AFE37 /* ItemTableViewController.swift in Sources */,
+				78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */,
+				7832726720597E9E009AFE37 /* ItemCollectionViewController.swift in Sources */,
 				783272412058E7C6009AFE37 /* AppDelegate.swift in Sources */,
+				7832726020597256009AFE37 /* ShelfCollectionViewController.swift in Sources */,
+				7832725C2058EE00009AFE37 /* ShelfTableViewController.swift in Sources */,
+				7832725A2058EDED009AFE37 /* ItemDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +438,14 @@
 		};
 		783272502058E7C7009AFE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C10DB8640439D42E5DF68B0 /* Pods-Shelf.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4KE9EQFN3;
 				INFOPLIST_FILE = Shelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RouteList.Shelf;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.Shelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +454,14 @@
 		};
 		783272512058E7C7009AFE37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD542B1F2512A90AC937253B /* Pods-Shelf.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4KE9EQFN3;
 				INFOPLIST_FILE = Shelf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RouteList.Shelf;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.Shelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
