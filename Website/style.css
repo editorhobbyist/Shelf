@@ -20,7 +20,6 @@ body {
     background: #ffffff;
     color: #fff;
     overflow-x: hidden;
-    padding-bottom: 50px;
 }
 
 /* BANNER SECTION
@@ -335,6 +334,7 @@ event_name {
     font-family: "Lato";
     text-align: center;
     font-size: 15px;
+    background: #13c4a3;
 }
 
 .chal_succ_icon_set {
