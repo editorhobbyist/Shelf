@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.0)
   - Firebase/Auth (4.11.0):
     - Firebase/Core
     - FirebaseAuth (= 4.5.0)
@@ -50,15 +51,19 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - RevealingSplashView (0.5.0)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - RevealingSplashView
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: 147bf340a0706b44ca1753d6b41ebafd9687cfe6
@@ -71,7 +76,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 259bc47f4d9fc26f575adc684f4706ab868cad84
+PODFILE CHECKSUM: 41a73029daeaca9294528bc659c8a72e3cc2e0d5
 
 COCOAPODS: 1.4.0
