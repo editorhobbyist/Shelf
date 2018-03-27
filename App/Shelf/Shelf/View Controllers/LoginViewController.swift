@@ -56,14 +56,11 @@ class LoginViewController: UIViewController {
                     // Retrieve user information from db
                     self.loadUserFromDB() {response in
                         self.user = response
+                        
+                        //Go to the HomeViewController if login is sucessful and user object is returned
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves")
+                        self.present(vc!, animated: true, completion: nil)
                     }
-                   
-                    // Create a user object
-                    //let user: User();
-                    
-                    //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves")
-                    self.present(vc!, animated: true, completion: nil)
                     
                 } else {
                     
@@ -79,8 +76,14 @@ class LoginViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       super.prepare(for: segue, sender: sender)
+
+    }
+    
+    // Loads user properties from server using a POST request - Returns a User object
     func loadUserFromDB(completion: @escaping (_ result: User) -> Void) {
-        var temp_user: User? = nil
+        var newUser: User? = nil
         
         let param: Parameters = [
             "queryType": "get_user_details",
@@ -92,10 +95,13 @@ class LoginViewController: UIViewController {
             switch response.result {
             case .success(let requestResponse):
                 let responseJSON = JSON(requestResponse)
-                print("JSON Response:\n", responseJSON)
+                for (_,subJson):(String, JSON) in responseJSON {
+                    let temp = subJson.dictionary!
+                    newUser = User(temp["user_id"]!.string!, temp["email_address"]!.string!, temp["first_name"]!.string!, temp["last_name"]!.string!)
+                }
+                completion(newUser!)
             case .failure(let error):
                 print("JSON request error: ", error)
-                
             }
         }
     }

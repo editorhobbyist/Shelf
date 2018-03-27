@@ -14,7 +14,7 @@ class User {
     var email_address: String = ""
     var user_id: String = ""
     
-    init(_ userid:String, _ emailaddress: String, _ firstname:String, _ lastname:String) {
+    init(_ userid: String, _ emailaddress: String, _ firstname: String, _ lastname: String) {
         self.user_id = userid
         self.email_address = emailaddress
         self.first_name = firstname

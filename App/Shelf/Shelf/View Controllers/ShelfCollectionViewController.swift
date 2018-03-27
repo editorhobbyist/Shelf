@@ -13,14 +13,14 @@ class ShelfCollectionViewController: UICollectionViewController {
     
     var shelf_items = ["Electronics", "Jackets", "Shoes"]
     var shelf_images = ["mbp17", "jacket", "shoe"]
-    var fb_shelf_items: [String: AnyObject] = [:]
-    var fb_shelf_items_array: [String] = []
-    
-    var ref = Database.database().reference() // Reference to RealtimeFirebaseDatabase
-    let user = Auth.auth().currentUser
+    var user: User? = nil
     
     override func viewWillAppear(_ animated: Bool) {
 
+    }
+    
+    public func setUser(_ user: User) {
+        self.user = user
     }
     
     override func viewDidLoad() {
@@ -29,17 +29,11 @@ class ShelfCollectionViewController: UICollectionViewController {
         self.navigationItem.title = "Shelves"
         
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        ref.child("shelves").child((self.user?.uid)!).observe(.value, with: { (snapshot) in
-            self.fb_shelf_items = (snapshot.value as? [String: AnyObject])!
-            
-            // 'map' function
-            self.fb_shelf_items_array = self.fb_shelf_items.map{return $0.key}
-            self.fb_shelf_items_array = self.fb_shelf_items_array.sorted();
-            self.collectionView?.reloadData()
-        })
 
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
+        
+        print(self.user)
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,7 +43,7 @@ class ShelfCollectionViewController: UICollectionViewController {
     
     // 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return fb_shelf_items.count
+        return shelf_items.count
     }
     
     // Set cells
