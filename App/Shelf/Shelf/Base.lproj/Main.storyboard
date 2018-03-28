@@ -404,10 +404,10 @@
             </objects>
             <point key="canvasLocation" x="-154" y="-907"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Shelf Tab Bar View Controller-->
         <scene sceneID="1d2-e4-FPz">
             <objects>
-                <tabBarController storyboardIdentifier="Shelves" automaticallyAdjustsScrollViewInsets="NO" id="zN3-1f-K2m" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Shelves" automaticallyAdjustsScrollViewInsets="NO" id="zN3-1f-K2m" customClass="ShelfTabBarViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dt9-Zr-9Fj">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

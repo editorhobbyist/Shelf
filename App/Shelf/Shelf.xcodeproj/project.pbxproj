@@ -24,6 +24,7 @@
 		78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9875C205ECE7300EA270C /* SignUpViewController.swift */; };
 		78D9DA4520699247000FBD5E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D9DA4620699247000FBD5E /* Alamofire.framework */; };
 		78D9DA472069924A000FBD5E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D9DA482069924A000FBD5E /* SwiftyJSON.framework */; };
+		78D9DA4A2069D362000FBD5E /* ShelfTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9DA492069D362000FBD5E /* ShelfTabBarViewController.swift */; };
 		D3FFF1ECE6499C7A144CEAF3 /* Pods_Shelf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFD1B0E828043A6FE3F7C76 /* Pods_Shelf.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		78D9875C205ECE7300EA270C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		78D9DA4620699247000FBD5E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D9DA482069924A000FBD5E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D9DA492069D362000FBD5E /* ShelfTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfTabBarViewController.swift; sourceTree = "<group>"; };
 		FD542B1F2512A90AC937253B /* Pods-Shelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shelf/Pods-Shelf.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				7832726620597E9E009AFE37 /* ItemCollectionViewController.swift */,
 				785F60B9205E874F003DEE90 /* LoginViewController.swift */,
 				78D9875C205ECE7300EA270C /* SignUpViewController.swift */,
+				78D9DA492069D362000FBD5E /* ShelfTabBarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				785F60BA205E874F003DEE90 /* LoginViewController.swift in Sources */,
 				7832726320597600009AFE37 /* ShelfCollectionCell.swift in Sources */,
 				7832726520597E65009AFE37 /* ItemCollectionCell.swift in Sources */,
+				78D9DA4A2069D362000FBD5E /* ShelfTabBarViewController.swift in Sources */,
 				7832725E2058EE11009AFE37 /* ItemTableViewController.swift in Sources */,
 				78D9875D205ECE7300EA270C /* SignUpViewController.swift in Sources */,
 				7832726720597E9E009AFE37 /* ItemCollectionViewController.swift in Sources */,

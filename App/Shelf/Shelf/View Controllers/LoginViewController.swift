@@ -57,9 +57,10 @@ class LoginViewController: UIViewController {
                     self.loadUserFromDB() {response in
                         self.user = response
                         
-                        //Go to the HomeViewController if login is sucessful and user object is returned
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves")
-                        self.present(vc!, animated: true, completion: nil)
+                        //Go to main tab bar interface if login is sucessful and user object is returned
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Shelves") as! ShelfTabBarViewController
+                        vc.setUser(self.user!)
+                        self.present(vc, animated: true, completion: nil)
                     }
                     
                 } else {

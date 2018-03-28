@@ -19,21 +19,21 @@ class ShelfCollectionViewController: UICollectionViewController {
 
     }
     
-    public func setUser(_ user: User) {
-        self.user = user
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Get User object from ShelfTabBarViewController
+        let tabBarController = self.tabBarController as! ShelfTabBarViewController
+        self.user = tabBarController.user
+        
+        // Set title
         self.navigationItem.title = "Shelves"
         
         self.navigationController?.navigationBar.shadowImage = UIImage()
 
+        // Create and set search bar in Navigation Bar
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
-        
-        print(self.user)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,7 +41,6 @@ class ShelfCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return shelf_items.count
     }
