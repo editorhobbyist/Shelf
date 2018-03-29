@@ -38,8 +38,6 @@ class ShelfCollectionViewController: UICollectionViewController {
         // Create and set search bar in Navigation Bar
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,29 +70,14 @@ class ShelfCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    // Loads user properties from server using a POST request - Returns a User object
+    // Loads user properties from server using a POST request - Returns [Shelf] object
     func loadShelves(completion: @escaping (_ result: User) -> Void) {
-        var newUser: User? = nil
-        
         let param: Parameters = [
             "queryType": "get_shelves",
             "user_id": self.user?.user_id ?? ""
         ]
         
-        // Send a POST request using params from above
-        Alamofire.request(db_url, method: .post, parameters: param).validate().responseJSON { response in
-            switch response.result {
-            case .success(let requestResponse):
-                let responseJSON = JSON(requestResponse)
-                for (_,subJson):(String, JSON) in responseJSON {
-                    let temp = subJson.dictionary!
-                    newUser = User(temp["user_id"]!.string!, temp["email_address"]!.string!, temp["first_name"]!.string!, temp["last_name"]!.string!)
-                }
-                completion(newUser!)
-            case .failure(let error):
-                print("JSON request error: ", error)
-            }
-        }
+        // TODO: Send a POST request using params from above
     }
 }
 
