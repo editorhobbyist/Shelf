@@ -8,12 +8,16 @@
 
 import UIKit
 import Firebase
+import Alamofire
+import SwiftyJSON
 
 class ShelfCollectionViewController: UICollectionViewController {
     
     var shelf_items = ["Electronics", "Jackets", "Shoes"]
     var shelf_images = ["mbp17", "jacket", "shoe"]
+    
     var user: User? = nil
+    let db_url = "https://weatherwears.000webhostapp.com/shelf/query.php"
     
     override func viewWillAppear(_ animated: Bool) {
 
@@ -34,6 +38,8 @@ class ShelfCollectionViewController: UICollectionViewController {
         // Create and set search bar in Navigation Bar
         let searchController = UISearchController(searchResultsController: nil)
         self.navigationItem.searchController = searchController
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,6 +70,31 @@ class ShelfCollectionViewController: UICollectionViewController {
         cell.shelfImage.image = UIImage(named: self.shelf_images[indexPath.row])
         cell.shelfImage.contentMode = .scaleAspectFit
         return cell
+    }
+    
+    // Loads user properties from server using a POST request - Returns a User object
+    func loadShelves(completion: @escaping (_ result: User) -> Void) {
+        var newUser: User? = nil
+        
+        let param: Parameters = [
+            "queryType": "get_shelves",
+            "user_id": self.user?.user_id ?? ""
+        ]
+        
+        // Send a POST request using params from above
+        Alamofire.request(db_url, method: .post, parameters: param).validate().responseJSON { response in
+            switch response.result {
+            case .success(let requestResponse):
+                let responseJSON = JSON(requestResponse)
+                for (_,subJson):(String, JSON) in responseJSON {
+                    let temp = subJson.dictionary!
+                    newUser = User(temp["user_id"]!.string!, temp["email_address"]!.string!, temp["first_name"]!.string!, temp["last_name"]!.string!)
+                }
+                completion(newUser!)
+            case .failure(let error):
+                print("JSON request error: ", error)
+            }
+        }
     }
 }
 

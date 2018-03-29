@@ -307,23 +307,70 @@
             <objects>
                 <viewController title="iPhone X" id="TuK-Sd-tK6" customClass="ItemDetailsViewController" customModule="Shelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zex-G7-I7K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.32140314580000001" green="0.69220799209999995" blue="0.58430069679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNX-h9-EXx">
+                                <rect key="frame" x="0.0" y="140" width="375" height="1527"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzg-pW-Kr7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-gW-pgi">
+                                                <rect key="frame" x="173" y="8" width="29" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k04-5i-cXf">
+                                                <rect key="frame" x="166" y="1471" width="56" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="36M-l3-0ZC"/>
+                                            <constraint firstItem="Kar-gW-pgi" firstAttribute="top" secondItem="Fzg-pW-Kr7" secondAttribute="top" constant="8" id="Kqb-EO-eP1"/>
+                                            <constraint firstAttribute="bottom" secondItem="k04-5i-cXf" secondAttribute="bottom" constant="8" id="OSm-a0-hno"/>
+                                            <constraint firstItem="k04-5i-cXf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fzg-pW-Kr7" secondAttribute="leading" id="Vzx-VN-aoX"/>
+                                            <constraint firstItem="Kar-gW-pgi" firstAttribute="centerX" secondItem="Fzg-pW-Kr7" secondAttribute="centerX" id="uJ4-yH-r5z"/>
+                                            <constraint firstAttribute="trailing" secondItem="k04-5i-cXf" secondAttribute="trailing" constant="153" id="ylq-bP-ToG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fzg-pW-Kr7" firstAttribute="top" secondItem="tNX-h9-EXx" secondAttribute="top" id="hS5-eM-z0Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fzg-pW-Kr7" secondAttribute="trailing" id="mMn-AG-XfJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fzg-pW-Kr7" secondAttribute="bottom" id="nkn-vI-O0O"/>
+                                    <constraint firstItem="Fzg-pW-Kr7" firstAttribute="leading" secondItem="tNX-h9-EXx" secondAttribute="leading" id="o1y-lM-SUs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98040133714675903" green="0.98038023710250854" blue="0.98038452863693237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tNX-h9-EXx" firstAttribute="top" secondItem="Bdc-je-NMA" secondAttribute="top" id="CPX-sp-NEo"/>
+                            <constraint firstItem="Fzg-pW-Kr7" firstAttribute="width" secondItem="zex-G7-I7K" secondAttribute="width" id="Jr5-At-RzF"/>
+                            <constraint firstItem="tNX-h9-EXx" firstAttribute="bottom" secondItem="Bdc-je-NMA" secondAttribute="bottom" id="pjE-mV-ag3"/>
+                            <constraint firstItem="tNX-h9-EXx" firstAttribute="leading" secondItem="Bdc-je-NMA" secondAttribute="leading" id="prG-bq-grg"/>
+                            <constraint firstItem="tNX-h9-EXx" firstAttribute="trailing" secondItem="Bdc-je-NMA" secondAttribute="trailing" id="s3c-Yp-Gyr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bdc-je-NMA"/>
                     </view>
                     <navigationItem key="navigationItem" title="iPhone X" id="w1F-LV-AXt">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="8a0-Jh-lxX"/>
                     </navigationItem>
+                    <size key="freeformSize" width="375" height="1750"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROi-1f-qEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2420" y="-251.23152709359607"/>
         </scene>
-        <!--ShelvesNav-->
+        <!--Shelf Root Navigation Controller-->
         <scene sceneID="5me-cr-hQp">
             <objects>
-                <navigationController title="ShelvesNav" automaticallyAdjustsScrollViewInsets="NO" id="k2I-wV-Umq" sceneMemberID="viewController">
+                <navigationController title="Shelf Root Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="k2I-wV-Umq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="AoO-g9-Ih3">
                         <color key="badgeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
